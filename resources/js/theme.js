@@ -448,10 +448,10 @@ jQuery(document).ready(function(){
 	}
 	waxon_tm_portfolio();
 
-	function waxon_tm_myload(){
-		setTimeout(function(){
-			jQuery('.waxon_tm_preloader').addClass('loaded');
-		}, 1000);
+	// function waxon_tm_myload(){
+		// setTimeout(function(){
+		// 	jQuery('.waxon_tm_preloader').addClass('loaded');
+		// }, 1000);
 		// setTimeout(function(){
 		// 	jQuery('.waxon_tm_hero .background .myOverlay').addClass('loaded');
 		// }, 2000);
@@ -462,7 +462,7 @@ jQuery(document).ready(function(){
 		// setTimeout(function(){
 		// 	waxon_tm_isotope();
 		// }, 5000);
-	}
+	// }
 
 	// -----------------------------------------------------
 	// --------------    ISOTOPE MASONRY    ----------------
@@ -496,9 +496,4 @@ jQuery(document).ready(function(){
 	// -------------------------------------------------
 	// -------------  LOAD FUNCTION  -------------------
 	// -------------------------------------------------
-
-	jQuery(window).load('body', function(){
-		waxon_tm_myload();
-	});
-
 });

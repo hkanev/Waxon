@@ -1,3 +1,10 @@
 require('./bootstrap');
+import Loader from './Layout/Loader.vue'
 
-require('alpinejs');
+import { createApp } from 'vue'
+
+createApp({
+    components: {
+        Loader,
+    }
+}).mount('#app')

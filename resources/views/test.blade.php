@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -28,26 +27,20 @@
     <!-- Scripts -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="{{ asset('js/theme.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark">  FOR RTL MODE: Add class "rtl" Example: <body class="rtl"> -->
+<body id="app"> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark">  FOR RTL MODE: Add class "rtl" Example: <body class="rtl"> -->
 
-<!-- PRELOADER -->
-<div class="waxon_tm_preloader">
-    <div class="spinner_wrap">
-        <div class="spinner"></div>
-    </div>
-</div>
-<!-- /PRELOADER -->
+<loader></loader>
 
 <!-- WRAPPER ALL -->
 <div class="waxon_tm_all_wrap" data-magic-cursor="" data-color="">
-
     <!-- MAGIC CURSOR VALUES: "", hide -->
     <!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
 
     <!-- TOPBAR -->
-    <div class="waxon_tm_topbar">
+    <div class="waxon_tm_topbar opened">
         <div class="container">
             <div class="topbar_inner">
                 <div class="logo">
@@ -710,13 +703,5 @@
 
 </div>
 <!-- / WRAPPER ALL -->
-
-<!-- SCRIPTS -->
-{{--<script src="html/js/jquery.js"></script>--}}
-{{--<script src="html/js/plugins.js"></script>--}}
-
-{{--<script src="html/js/customcode.js"></script>--}}
-<!-- /SCRIPTS -->
-
 </body>
 </html>
