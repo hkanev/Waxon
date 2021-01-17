@@ -14,11 +14,7 @@ mix
     .js('resources/js/app.js', 'public/js')
     .js('resources/js/theme.js', 'public/js')
     .vue(3)
-    .postCss('resources/css/app.css', 'public/css', [
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('autoprefixer'),
-    ])
+    .sass('resources/css/styles.scss', 'public/css')
     .webpackConfig(webpack => {
     return {
         plugins: [

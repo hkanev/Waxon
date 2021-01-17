@@ -23,9 +23,9 @@
     <link rel="stylesheet" type="text/css" href="theme/css/darkMode.css" />
     <link rel="stylesheet" type="text/css" href="theme/css/rtl.css" />
     <link rel="stylesheet" type="text/css" href="theme/css/mycss.css" />
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script src="{{ asset('js/theme.js') }}" defer></script>
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
@@ -38,6 +38,8 @@
 <div class="waxon_tm_all_wrap" data-magic-cursor="" data-color="">
     <!-- MAGIC CURSOR VALUES: "", hide -->
     <!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
+
+
 
     <!-- TOPBAR -->
     <div class="waxon_tm_topbar opened">
@@ -132,7 +134,7 @@
             </div>
             <div class="rightpart">
                 <div class="inner">
-                    <div class="image" data-img-url="img/slider/2.jpg"></div>
+                    <div class="image" data-img-url="img/header/flipped-background.png"></div>
                     <!--					<div class="myOverlay"></div>-->
                 </div>
             </div>
@@ -141,9 +143,9 @@
             <div class="container">
                 <div class="content_inner">
                     <div class="name">
-                        <h3 class="stroke">Bernard</h3>
-                        <h3>Sydney</h3>
-                        <span>Creative Web &amp; App Developer</span>
+                        <h3 class="stroke">Stefan</h3>
+                        <h3>Stefanov</h3>
+                        <span>Learn tennis whenever and wherever you are</span>
                     </div>
                 </div>
                 <div class="waxon_tm_down" data-skin="dark" data-position="">  <!-- Skin: "", dark -->  <!-- Position: left, center, right -->
@@ -156,6 +158,7 @@
     </div>
     <!-- /HERO -->
 
+    <login></login>
     <!-- ABOUT -->
     <div class="waxon_tm_about" id="about">
         <div class="container">

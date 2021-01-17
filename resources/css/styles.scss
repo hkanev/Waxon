@@ -1,0 +1,128 @@
+$black: #000;
+$white: #fff;
+$gray: #333;
+
+@import "Elements/buttons";
+
+body{
+    font-family: "Mulish";
+    font-size: 15px;
+    line-height: 2.1;
+    letter-spacing: 0.8px;
+    word-wrap: break-word;
+    font-weight: 400;
+    background-color: $white;
+    color: $gray;
+    margin: 0;
+    height: 300vh;
+    overflow-x: hidden;
+}
+
+.header {
+    height: 100vh;
+    position: relative;
+    display: flex;
+
+    .topbar {
+        transition: 0.1s ease;
+        position: fixed;
+        width: 95%;
+        padding-left: 5%;
+        z-index: 10;
+        top: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        nav {
+            width: 60%;
+            position: relative;
+            left: 22%;
+
+            a {
+                transition: 0.3s ease;
+                color: $white;
+                font-size: 18px;
+                text-decoration: none;
+                padding: 10px 0;
+                margin: 0 20px;
+
+                &:hover {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .logo {
+            background: $white;
+            width: 37.3%;
+            height: 100px;
+
+            img {
+                padding: 10px 0;
+                height: 90px;
+                cursor: pointer;
+                margin-left: -1%;
+            }
+        }
+
+        &.static {
+            background: $white;
+
+            nav {
+                a {
+                    color: $gray;
+                }
+            }
+        }
+    }
+
+    .left-col {
+        flex: 1 0 35%;
+        padding-left: 5.5%;
+
+        .slogan {
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            h2 {
+                &:first-child {
+                    -webkit-text-stroke: 1px $black;
+                    color: $white;;
+                }
+
+                line-height: 1.1;
+                text-transform: uppercase;
+                color: #000;
+                font-size: 100px;
+                font-family: "Montserrat";
+                font-weight: 1000;
+                margin: 0;
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 600;
+                display: block;
+            }
+
+            .btn {
+                margin-left: -5px;
+            }
+        }
+    }
+
+    .right-col {
+        height: 100vh;
+        background: url("/img/header/background.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        flex: 1 0 65%;
+    }
+}
+

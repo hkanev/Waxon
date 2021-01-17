@@ -1,0 +1,135 @@
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 13px 50px;
+  display: inline-block;
+  border-radius: 50px;
+  border: 2px solid;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+body {
+  font-family: "Mulish";
+  font-size: 15px;
+  line-height: 2.1;
+  letter-spacing: 0.8px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  height: 300vh;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.header .topbar {
+  transition: 0.1s ease;
+  position: fixed;
+  width: 95%;
+  padding-left: 5%;
+  z-index: 10;
+  top: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .topbar nav {
+  width: 60%;
+  position: relative;
+  left: 22%;
+}
+
+.header .topbar nav a {
+  transition: 0.3s ease;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 20px;
+}
+
+.header .topbar nav a:hover {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header .topbar .logo {
+  background: #fff;
+  width: 37.3%;
+  height: 100px;
+}
+
+.header .topbar .logo img {
+  padding: 10px 0;
+  height: 90px;
+  cursor: pointer;
+  margin-left: -1%;
+}
+
+.header .topbar.static {
+  background: #fff;
+}
+
+.header .topbar.static nav a {
+  color: #333;
+}
+
+.header .left-col {
+  flex: 1 0 35%;
+  padding-left: 5.5%;
+}
+
+.header .left-col .slogan {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .left-col .slogan h2 {
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 100px;
+  font-family: "Montserrat";
+  font-weight: 1000;
+  margin: 0;
+}
+
+.header .left-col .slogan h2:first-child {
+  -webkit-text-stroke: 1px #000;
+  color: #fff;
+}
+
+.header .left-col .slogan span {
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+.header .left-col .slogan .btn {
+  margin-left: -5px;
+}
+
+.header .right-col {
+  height: 100vh;
+  background: url(/images/background.png?d7178bd13a5ed57bc646c53340ffe2a6) no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 1 0 65%;
+}
+

@@ -1,0 +1,28 @@
+
+.form-row {
+    margin-bottom: 10px;
+
+    label {
+        margin-left: 2px;
+        font-weight: 700;
+    }
+
+    input {
+        width: 100%;
+        border: 1px solid rgba(0,0,0,.2);
+        background-color: #fff;
+        border-radius: 10px;
+
+        &.disabled {
+            background: #fbf4f4;
+            cursor: not-allowed;
+        }
+    }
+
+    .error {
+        margin-left: 2px;
+        color: #F52225;
+        text-align: left;
+        font-weight: 500;
+    }
+}
