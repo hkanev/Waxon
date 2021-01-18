@@ -30,63 +30,11 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
-<body id="app"> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark">  FOR RTL MODE: Add class "rtl" Example: <body class="rtl"> -->
+<body id="app">
 
+<div>
+    <page-hader></page-hader>
 
-<div class="waxon_tm_all_wrap" data-magic-cursor="" data-color="">
-    <!-- MAGIC CURSOR VALUES: "", hide -->
-    <!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
-        <page-hader></page-hader>
-    <!-- TOPBAR -->
-{{--    <div class="waxon_tm_topbar opened">--}}
-{{--        <div class="container">--}}
-{{--            <div class="topbar_inner">--}}
-{{--                <div class="logo">--}}
-{{--                    <a href="#">--}}
-{{--                        <img class="light" src="img/logo/logo.png" alt="" />--}}
-{{--                        <img class="dark" src="img/logo/dark.png" alt="" />--}}
-{{--                    </a>--}}
-{{--                </div>--}}
-{{--                <div class="menu">--}}
-{{--                    <div class="links">--}}
-{{--                        <ul class="anchor_nav">--}}
-{{--                            <li class="current">--}}
-{{--                                <a href="#home">--}}
-{{--                                    <span class="first">Home</span>--}}
-{{--                                    <span class="second">Home</span>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a href="#about">--}}
-{{--                                    <span class="first">About</span>--}}
-{{--                                    <span class="second">About</span>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a href="#portfolio">--}}
-{{--                                    <span class="first">Portfolio</span>--}}
-{{--                                    <span class="second">Portfolio</span>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a href="#news">--}}
-{{--                                    <span class="first">News</span>--}}
-{{--                                    <span class="second">News</span>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a href="#contact">--}}
-{{--                                    <span class="first">Contact</span>--}}
-{{--                                    <span class="second">Contact</span>--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-<!-- /TOPBAR -->
 </div>
 </body>
 </html>

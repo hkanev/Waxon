@@ -16225,7 +16225,7 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Layout_Loader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Layout/Loader.vue */ "./resources/js/Layout/Loader.vue");
+/* harmony import */ var _Layout_Loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Layout/Loader */ "./resources/js/Layout/Loader.vue");
 /* harmony import */ var _Layout_Header_Header_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Layout/Header/Header.vue */ "./resources/js/Layout/Header/Header.vue");
 /* harmony import */ var _User_Login_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/User/Login.vue */ "./resources/js/User/Login.vue");
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
@@ -16237,7 +16237,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_3__.createApp)({
   components: {
-    Loader: _Layout_Loader_vue__WEBPACK_IMPORTED_MODULE_0__.default,
+    Loader: _Layout_Loader__WEBPACK_IMPORTED_MODULE_0__.default,
     PageHader: _Layout_Header_Header_vue__WEBPACK_IMPORTED_MODULE_1__.default,
     Login: _User_Login_vue__WEBPACK_IMPORTED_MODULE_2__.default
   }
