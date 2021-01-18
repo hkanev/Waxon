@@ -1,6 +1,9 @@
 <template>
-    <div class="waxon_tm_contact" id="contact">
-        <div class="bg_image"></div>
+    <div
+        id="contact"
+        class="waxon_tm_contact"
+    >
+        <div class="bg_image" />
         <div class="container">
             <div class="contact_inner">
                 <div class="waxon_tm_main_title">
@@ -14,39 +17,68 @@
                 <div class="wrapper">
                     <div class="left">
                         <div class="fields">
-                            <form action="/" method="post" class="contact_form" id="contact_form">
-                                <div class="returnmessage" data-success="Your message has been received, We will contact you soon.">
-<!--                                     <span class="contact_success">-->
-                                                              </div>
-                                <base-input :properties="form.name"></base-input>
-                                <div class="empty_notice"><span>Please Fill Reuired Fields</span></div>
+                            <form
+                                id="contact_form"
+                                action="/"
+                                method="post"
+                                class="contact_form"
+                            >
+                                <div
+                                    class="returnmessage"
+                                    data-success="Your message has been received, We will contact you soon."
+                                >
+                                    <!--                                     <span class="contact_success">-->
+                                </div>
+                                <base-input :properties="form.name" />
+                                <div class="empty_notice">
+                                    <span>Please Fill Reuired Fields</span>
+                                </div>
                                 <div class="first">
                                     <ul>
                                         <li>
-                                            <input id="name" type="text" placeholder="Name">
+                                            <input
+                                                id="name"
+                                                type="text"
+                                                placeholder="Name"
+                                            >
                                         </li>
                                         <li>
-                                            <input id="email" type="text" placeholder="Email">
+                                            <input
+                                                id="email"
+                                                type="text"
+                                                placeholder="Email"
+                                            >
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="last">
-                                    <textarea id="message" placeholder="Message"></textarea>
+                                    <textarea
+                                        id="message"
+                                        placeholder="Message"
+                                    />
                                 </div>
-                                <div class="waxon_tm_button" data-position="left">
-                                    <a id="send_message" href="#">
+                                <div
+                                    class="waxon_tm_button"
+                                    data-position="left"
+                                >
+                                    <a
+                                        id="send_message"
+                                        href="#"
+                                    >
                                         <span>Send Message</span>
                                     </a>
                                 </div>
 
                                 <!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->
-
                             </form>
                         </div>
                     </div>
                     <div class="right">
                         <div class="map_wrap">
-                            <div class="map" id="ieatmaps"></div>
+                            <div
+                                id="ieatmaps"
+                                class="map"
+                            />
                         </div>
                     </div>
                 </div>
@@ -56,27 +88,27 @@
 </template>
 
 <script>
-import BaseInput from "../Form/Input";
-import { ref, reactive } from 'vue'
-export default {
-    components: {
-        BaseInput
-    },
-    setup() {
-        const form = reactive({
-            name: {
-                type: 'email',
-                name: 'Email',
-                label: 'Email',
-                error: null,
-                disabled: false,
-                placeholder: 'Email'
-            }
-        })
+    import BaseInput from "../Form/Input";
+    import { ref, reactive } from 'vue'
+    export default {
+        components: {
+            BaseInput
+        },
+        setup() {
+            const form = reactive({
+                name: {
+                    type: 'email',
+                    name: 'Email',
+                    label: 'Email',
+                    error: null,
+                    disabled: false,
+                    placeholder: 'Email'
+                }
+            })
 
-        return { form }
+            return { form }
+        }
     }
-}
 </script>
 
 <style scoped>

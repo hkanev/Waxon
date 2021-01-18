@@ -1,13 +1,16 @@
 <template>
-    <div class="waxon_tm_preloader" :class="loaded ? 'loaded' : ''">
+    <div
+        class="waxon_tm_preloader"
+        :class="loaded ? 'loaded' : ''"
+    >
         <div class="spinner_wrap">
-            <div class="spinner"></div>
+            <div class="spinner" />
         </div>
     </div>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue'
+    import { ref, onMounted } from 'vue'
     export default {
         setup() {
             const loaded = ref(false);
